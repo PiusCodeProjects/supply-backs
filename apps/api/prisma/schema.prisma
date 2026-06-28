@@ -1,0 +1,349 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                       String                    @id @default(cuid())
+  email                    String?                   @unique
+  phone                    String                    @unique
+  passwordHash             String
+  role                     String
+  status                   String                    @default("ACTIVE")
+  isVerified               Boolean                   @default(false)
+  createdAt                DateTime                  @default(now())
+  updatedAt                DateTime                  @updatedAt
+  catalogItems             CatalogItem[]             @relation("SupplierCatalog")
+  contractorProfile        ContractorProfile?
+  conversationParticipants ConversationParticipant[]
+  driverProfile            DriverProfile?
+  messageReads             MessageRead[]
+  sentMessages             Message[]
+  notifications            Notification[]
+  driverOrders             Order[]                   @relation("DriverOrders")
+  supplierOrders           Order[]                   @relation("SupplierOrders")
+  contractorOrders         Order[]                   @relation("ContractorOrders")
+  otpTokens                OtpToken[]
+  projects                 Project[]                 @relation("ContractorProjects")
+  refreshTokens            RefreshToken[]
+  supplierDrivers          SupplierDriver[]          @relation("DriverSuppliers")
+  registeredDrivers        SupplierDriver[]          @relation("SupplierDrivers")
+  supplierProfile          SupplierProfile?
+  proposedMasterProducts   MasterProduct[]           @relation("ProposedMasterProducts")
+
+  @@map("users")
+}
+
+model OtpToken {
+  id        String   @id @default(cuid())
+  userId    String
+  code      String
+  purpose   String
+  expiresAt DateTime
+  used      Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("otp_tokens")
+}
+
+model RefreshToken {
+  id        String   @id @default(cuid())
+  userId    String
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("refresh_tokens")
+}
+
+model ContractorProfile {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  firstName String
+  lastName  String
+  company   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("contractor_profiles")
+}
+
+model SupplierProfile {
+  id                 String   @id @default(cuid())
+  userId             String   @unique
+  businessName       String
+  verificationStatus String   @default("PENDING")
+  documents          String   @default("[]")
+  storePhotos        String   @default("[]")
+  rejectionReason    String?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("supplier_profiles")
+}
+
+model DriverProfile {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  firstName   String
+  lastName    String
+  licenseNo   String?
+  ratePerTrip Float?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("driver_profiles")
+}
+
+model SupplierDriver {
+  id         String   @id @default(cuid())
+  supplierId String
+  driverId   String
+  createdAt  DateTime @default(now())
+  driver     User     @relation("DriverSuppliers", fields: [driverId], references: [id], onDelete: Cascade)
+  supplier   User     @relation("SupplierDrivers", fields: [supplierId], references: [id], onDelete: Cascade)
+
+  @@unique([supplierId, driverId])
+  @@map("supplier_drivers")
+}
+
+model Project {
+  id                String               @id @default(cuid())
+  contractorId      String
+  name              String
+  location          String
+  status            String               @default("ACTIVE")
+  startDate         DateTime?
+  estimatedDuration String?
+  projectType       String?
+  budget            Float?
+  createdAt         DateTime             @default(now())
+  updatedAt         DateTime             @updatedAt
+  lat               Float?
+  lng               Float?
+  orders            Order[]
+  requirements      ProjectRequirement[]
+  contractor        User                 @relation("ContractorProjects", fields: [contractorId], references: [id])
+
+  @@map("projects")
+}
+
+model ProjectRequirement {
+  id             String    @id @default(cuid())
+  projectId      String
+  materialName   String
+  quantityNeeded Float
+  unit           String
+  priority       String    @default("MEDIUM")
+  neededBy       DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  project        Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@map("project_requirements")
+}
+
+
+model OrderLocation {
+  id        String   @id @default(cuid())
+  orderId   String
+  lat       Float
+  lng       Float
+  timestamp DateTime @default(now())
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@map("order_locations")
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String
+  message   String
+  type      String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("notifications")
+}
+
+model MasterProduct {
+  id              String        @id @default(cuid())
+  name            String
+  category        String
+  description     String?
+  imageUrl        String?
+  unit            String?
+  // APPROVED (visible to all suppliers) | PENDING (submitted, awaiting admin review) | REJECTED
+  status          String        @default("APPROVED")
+  submittedById   String?
+  rejectionReason String?
+  reviewedAt      DateTime?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  catalogItems    CatalogItem[]
+  submittedBy     User?         @relation("ProposedMasterProducts", fields: [submittedById], references: [id])
+
+  @@map("master_products")
+}
+
+model CatalogItem {
+  id              String         @id @default(cuid())
+  supplierId      String
+  masterProductId String?
+  name            String?
+  description     String?
+  price           Float
+  unit            String
+  stock           Float          @default(0)
+  category        String?
+  imageUrl        String?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  supplier        User           @relation("SupplierCatalog", fields: [supplierId], references: [id])
+  masterProduct   MasterProduct? @relation(fields: [masterProductId], references: [id])
+  orderItems      OrderItem[]
+
+  @@map("catalog_items")
+}
+
+model Order {
+  id              String             @id @default(cuid())
+  contractorId    String
+  supplierId      String
+  projectId       String?
+  driverId           String?
+  status             String             @default("PENDING")
+  totalAmount        Float
+  escrowStatus       String             @default("HELD")
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+  podLat             Float?
+  podLng             Float?
+  podPhotoUrl        String?
+  podSignatureUrl    String?
+  podTimestamp       DateTime?
+  deliveryDate       DateTime?
+  deliveryType       String             @default("STANDARD")
+  fulfillmentType    String             @default("DELIVERY")
+  notes              String?
+  driverFee          Float?
+  bookedByContractor Boolean            @default(false)
+  // Personal (non-project) orders — populated only when projectId is null
+  shippingAddress    String?
+  recipientName      String?
+  recipientPhone     String?
+
+  conversations   Conversation[]
+  escrowTx        EscrowTransaction?
+  items           OrderItem[]
+  locations       OrderLocation[]
+  driver          User?              @relation("DriverOrders", fields: [driverId], references: [id])
+  project         Project?           @relation(fields: [projectId], references: [id])
+  supplier        User               @relation("SupplierOrders", fields: [supplierId], references: [id])
+  contractor      User               @relation("ContractorOrders", fields: [contractorId], references: [id])
+
+  @@map("orders")
+}
+
+model OrderItem {
+  id            String      @id @default(cuid())
+  orderId       String
+  catalogItemId String
+  quantity      Float
+  priceAtOrder  Float
+  catalogItem   CatalogItem @relation(fields: [catalogItemId], references: [id])
+  order         Order       @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@map("order_items")
+}
+
+model EscrowTransaction {
+  id        String   @id @default(cuid())
+  orderId   String   @unique
+  amount    Float
+  status    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  order     Order    @relation(fields: [orderId], references: [id])
+
+  @@map("escrow_transactions")
+}
+
+model Conversation {
+  id           String                    @id @default(cuid())
+  orderId      String
+  type         String                    @default("ORDER_SHARED")
+  createdAt    DateTime                  @default(now())
+  updatedAt    DateTime                  @updatedAt
+  participants ConversationParticipant[]
+  order        Order                     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  messages     Message[]
+
+  @@unique([orderId, type])
+  @@map("conversations")
+}
+
+model ConversationParticipant {
+  id             String       @id @default(cuid())
+  conversationId String
+  userId         String
+  joinedAt       DateTime     @default(now())
+  lastReadAt     DateTime?
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@unique([conversationId, userId])
+  @@map("conversation_participants")
+}
+
+model Message {
+  id             String              @id @default(cuid())
+  conversationId String
+  senderId       String
+  content        String?
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  attachments    MessageAttachment[]
+  reads          MessageRead[]
+  sender         User                @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  conversation   Conversation        @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@map("messages")
+}
+
+model MessageAttachment {
+  id           String   @id @default(cuid())
+  messageId    String
+  originalName String
+  storedName   String
+  mimeType     String?
+  size         Int
+  url          String
+  createdAt    DateTime @default(now())
+  message      Message  @relation(fields: [messageId], references: [id], onDelete: Cascade)
+
+  @@map("message_attachments")
+}
+
+model MessageRead {
+  id        String   @id @default(cuid())
+  messageId String
+  userId    String
+  readAt    DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  message   Message  @relation(fields: [messageId], references: [id], onDelete: Cascade)
+
+  @@unique([messageId, userId])
+  @@map("message_reads")
+}

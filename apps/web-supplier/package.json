@@ -1,0 +1,27 @@
+{
+  "name": "@cscp/web-supplier",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4003",
+    "build": "next build",
+    "start": "next start -p 4003"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.14.0",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@cscp/types": "*",
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}

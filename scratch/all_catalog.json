@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "cmopnfv0500039ngg64uhxqpn",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "Standard Portland Cement",
+    "description": "High quality standard portland cement for construction projects.",
+    "price": 10.99334032531638,
+    "unit": "50kg Bag",
+    "stock": 275,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.765Z",
+    "updatedAt": "2026-05-03T10:50:11.765Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv0c00059nggrcd7xbmi",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "Structural Timber (2x4)",
+    "description": "High quality structural timber (2x4) for construction projects.",
+    "price": 4.14950952357544,
+    "unit": "Foot",
+    "stock": 224,
+    "category": "Carpentry",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.772Z",
+    "updatedAt": "2026-05-03T10:50:11.772Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv0i00079ngg2pg49fze",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "Ready-Mix Concrete (C25)",
+    "description": "High quality ready-mix concrete (c25) for construction projects.",
+    "price": 108.1021600569362,
+    "unit": "Cubic Meter",
+    "stock": 925,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.779Z",
+    "updatedAt": "2026-05-03T10:50:11.779Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv0p00099nggkhmi4swp",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "Double Glazed Window Panes",
+    "description": "High quality double glazed window panes for construction projects.",
+    "price": 97.05754825118962,
+    "unit": "Sqm",
+    "stock": 127,
+    "category": "Glass",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.786Z",
+    "updatedAt": "2026-05-03T10:50:11.786Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv0x000b9nggitmgon92",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "Quarry Dust",
+    "description": "High quality quarry dust for construction projects.",
+    "price": 36.88316849363741,
+    "unit": "Ton",
+    "stock": 577,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.793Z",
+    "updatedAt": "2026-05-03T10:50:11.793Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv15000d9nggwv6rffq5",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "Copper Wiring (2.5mm)",
+    "description": "High quality copper wiring (2.5mm) for construction projects.",
+    "price": 120.1322732727187,
+    "unit": "100m Roll",
+    "stock": 851,
+    "category": "Electrical",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.801Z",
+    "updatedAt": "2026-05-03T10:50:11.801Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv1c000f9nggbk6qff51",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "PVC Conduit Pipe (20mm)",
+    "description": "High quality pvc conduit pipe (20mm) for construction projects.",
+    "price": 4.818926565864462,
+    "unit": "3m Length",
+    "stock": 1049,
+    "category": "Electrical",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.808Z",
+    "updatedAt": "2026-05-03T10:50:11.808Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv1k000h9ngg3vdm4x5e",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "Galvanized Iron Sheets",
+    "description": "High quality galvanized iron sheets for construction projects.",
+    "price": 19.29392282678994,
+    "unit": "Sheet",
+    "stock": 938,
+    "category": "Roofing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.816Z",
+    "updatedAt": "2026-05-03T10:50:11.816Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv1r000j9nggfkkjq5es",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "Ceramic Floor Tiles (60x60)",
+    "description": "High quality ceramic floor tiles (60x60) for construction projects.",
+    "price": 23.85122894667972,
+    "unit": "Sqm",
+    "stock": 131,
+    "category": "Finishing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.823Z",
+    "updatedAt": "2026-05-03T10:50:11.823Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv1z000l9ngg6913bio3",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": null,
+    "name": "PPR Hot Water Pipe",
+    "description": "High quality ppr hot water pipe for construction projects.",
+    "price": 15.86387007234926,
+    "unit": "Length",
+    "stock": 1098,
+    "category": "Plumbing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.831Z",
+    "updatedAt": "2026-05-03T10:50:11.831Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv2g000p9ngglnxjq3z9",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "Quarry Dust",
+    "description": "High quality quarry dust for construction projects.",
+    "price": 39.46624910258615,
+    "unit": "Ton",
+    "stock": 476,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.849Z",
+    "updatedAt": "2026-05-03T10:50:11.849Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv2n000r9nggqjfv5cuq",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "Red Clay Bricks",
+    "description": "High quality red clay bricks for construction projects.",
+    "price": 249.9945526311581,
+    "unit": "1000 Units",
+    "stock": 237,
+    "category": "Masonry",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.856Z",
+    "updatedAt": "2026-05-03T10:50:11.856Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv2v000t9ngg0u7bppkh",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "Solar Water Heater (200L)",
+    "description": "High quality solar water heater (200l) for construction projects.",
+    "price": 848.4016319800734,
+    "unit": "Unit",
+    "stock": 227,
+    "category": "Energy",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.863Z",
+    "updatedAt": "2026-05-03T10:50:11.863Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv31000v9ngg932b5a4n",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "Ready-Mix Concrete (C25)",
+    "description": "High quality ready-mix concrete (c25) for construction projects.",
+    "price": 112.0314508087986,
+    "unit": "Cubic Meter",
+    "stock": 648,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.870Z",
+    "updatedAt": "2026-05-03T10:50:11.870Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv3a000x9ngg0r65otqp",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "PVC Conduit Pipe (20mm)",
+    "description": "High quality pvc conduit pipe (20mm) for construction projects.",
+    "price": 3.462404210970717,
+    "unit": "3m Length",
+    "stock": 186,
+    "category": "Electrical",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.878Z",
+    "updatedAt": "2026-05-03T10:50:11.878Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv3h000z9nggd4apdejz",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "PPR Hot Water Pipe",
+    "description": "High quality ppr hot water pipe for construction projects.",
+    "price": 16.13932169332363,
+    "unit": "Length",
+    "stock": 199,
+    "category": "Plumbing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.885Z",
+    "updatedAt": "2026-05-03T10:50:11.885Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv3o00119nggvcvefuzw",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "Interior Emulsion Paint (White)",
+    "description": "High quality interior emulsion paint (white) for construction projects.",
+    "price": 67.36875853130476,
+    "unit": "20L Bucket",
+    "stock": 373,
+    "category": "Painting",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.892Z",
+    "updatedAt": "2026-05-03T10:50:11.892Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv3v00139nggowg5znwm",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "River Sand (Clean)",
+    "description": "High quality river sand (clean) for construction projects.",
+    "price": 46.48382273670899,
+    "unit": "Ton",
+    "stock": 177,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.899Z",
+    "updatedAt": "2026-05-03T10:50:11.899Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv4100159nggbb0zzcdp",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "Copper Wiring (2.5mm)",
+    "description": "High quality copper wiring (2.5mm) for construction projects.",
+    "price": 117.7293102897571,
+    "unit": "100m Roll",
+    "stock": 151,
+    "category": "Electrical",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.906Z",
+    "updatedAt": "2026-05-03T10:50:11.906Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv4800179ngggcq9cckv",
+    "supplierId": "cmopnfv28000m9nggxyxy6kgh",
+    "masterProductId": null,
+    "name": "Ceramic Floor Tiles (60x60)",
+    "description": "High quality ceramic floor tiles (60x60) for construction projects.",
+    "price": 19.66313377529659,
+    "unit": "Sqm",
+    "stock": 191,
+    "category": "Finishing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.912Z",
+    "updatedAt": "2026-05-03T10:50:11.912Z",
+    "supplier": {
+      "id": "cmopnfv28000m9nggxyxy6kgh",
+      "supplierProfile": {
+        "businessName": "Falcon Building Materials"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv4r001b9nggroheruvg",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Structural Timber (2x4)",
+    "description": "High quality structural timber (2x4) for construction projects.",
+    "price": 3.595306790031547,
+    "unit": "Foot",
+    "stock": 530,
+    "category": "Carpentry",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.932Z",
+    "updatedAt": "2026-05-03T10:50:11.932Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv50001d9ngg3nf4njdu",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Copper Wiring (2.5mm)",
+    "description": "High quality copper wiring (2.5mm) for construction projects.",
+    "price": 119.9140344654033,
+    "unit": "100m Roll",
+    "stock": 215,
+    "category": "Electrical",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.941Z",
+    "updatedAt": "2026-05-03T10:50:11.941Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv58001f9nggy6qe5yab",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Quarry Dust",
+    "description": "High quality quarry dust for construction projects.",
+    "price": 37.95176202481505,
+    "unit": "Ton",
+    "stock": 195,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.949Z",
+    "updatedAt": "2026-05-03T10:50:11.949Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv5f001h9nggq82hzacq",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Standard Portland Cement",
+    "description": "High quality standard portland cement for construction projects.",
+    "price": 12.22760327596556,
+    "unit": "50kg Bag",
+    "stock": 868,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.956Z",
+    "updatedAt": "2026-05-03T10:50:11.956Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv5n001j9ngg7kn43lno",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Ceramic Floor Tiles (60x60)",
+    "description": "High quality ceramic floor tiles (60x60) for construction projects.",
+    "price": 19.55664485948402,
+    "unit": "Sqm",
+    "stock": 675,
+    "category": "Finishing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.963Z",
+    "updatedAt": "2026-05-03T10:50:11.963Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv5v001l9ngg1jeiq7df",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "PPR Hot Water Pipe",
+    "description": "High quality ppr hot water pipe for construction projects.",
+    "price": 16.4643259983047,
+    "unit": "Length",
+    "stock": 587,
+    "category": "Plumbing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.971Z",
+    "updatedAt": "2026-05-03T10:50:11.971Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv62001n9nggh9oefpu9",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Red Clay Bricks",
+    "description": "High quality red clay bricks for construction projects.",
+    "price": 250.7117581793959,
+    "unit": "1000 Units",
+    "stock": 646,
+    "category": "Masonry",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.978Z",
+    "updatedAt": "2026-05-03T10:50:11.978Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv69001p9ngguh8gr8n8",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Ready-Mix Concrete (C25)",
+    "description": "High quality ready-mix concrete (c25) for construction projects.",
+    "price": 109.7743304725262,
+    "unit": "Cubic Meter",
+    "stock": 297,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.985Z",
+    "updatedAt": "2026-05-03T10:50:11.985Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv6g001r9nggjt3swrrs",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Reinforcement Steel Bar (12mm)",
+    "description": "High quality reinforcement steel bar (12mm) for construction projects.",
+    "price": 9.261642291894676,
+    "unit": "Meter",
+    "stock": 599,
+    "category": "Structural",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:11.992Z",
+    "updatedAt": "2026-05-03T10:50:11.992Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv6r001t9ngg1pa29pa6",
+    "supplierId": "cmopnfv4i00189nggrpxnad3b",
+    "masterProductId": null,
+    "name": "Solar Water Heater (200L)",
+    "description": "High quality solar water heater (200l) for construction projects.",
+    "price": 847.7266786733569,
+    "unit": "Unit",
+    "stock": 100,
+    "category": "Energy",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.003Z",
+    "updatedAt": "2026-05-03T10:50:12.003Z",
+    "supplier": {
+      "id": "cmopnfv4i00189nggrpxnad3b",
+      "supplierProfile": {
+        "businessName": "Metro Hardware & Logistics"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv76001x9nggw1kw7cpj",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "Interior Emulsion Paint (White)",
+    "description": "High quality interior emulsion paint (white) for construction projects.",
+    "price": 66.8653506403914,
+    "unit": "20L Bucket",
+    "stock": 689,
+    "category": "Painting",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.018Z",
+    "updatedAt": "2026-05-03T10:50:12.018Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv7d001z9nggxvqg5buv",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "PPR Hot Water Pipe",
+    "description": "High quality ppr hot water pipe for construction projects.",
+    "price": 13.3342637959342,
+    "unit": "Length",
+    "stock": 312,
+    "category": "Plumbing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.025Z",
+    "updatedAt": "2026-05-03T10:50:12.025Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv7k00219nggvt4ho4gi",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "Quarry Dust",
+    "description": "High quality quarry dust for construction projects.",
+    "price": 37.11582845794311,
+    "unit": "Ton",
+    "stock": 772,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.032Z",
+    "updatedAt": "2026-05-03T10:50:12.032Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv7r00239nggmyccmdaz",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "Solar Water Heater (200L)",
+    "description": "High quality solar water heater (200l) for construction projects.",
+    "price": 848.2072686282582,
+    "unit": "Unit",
+    "stock": 313,
+    "category": "Energy",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.039Z",
+    "updatedAt": "2026-05-03T10:50:12.039Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv7x00259nggmcqo6sjz",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "Red Clay Bricks",
+    "description": "High quality red clay bricks for construction projects.",
+    "price": 249.5042815530703,
+    "unit": "1000 Units",
+    "stock": 1006,
+    "category": "Masonry",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.046Z",
+    "updatedAt": "2026-05-03T10:50:12.046Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv8500279ngg3wh5ngqk",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "Double Glazed Window Panes",
+    "description": "High quality double glazed window panes for construction projects.",
+    "price": 93.06296978687163,
+    "unit": "Sqm",
+    "stock": 647,
+    "category": "Glass",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.053Z",
+    "updatedAt": "2026-05-03T10:50:12.053Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv8c00299ngg3orsuvb1",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "Ceramic Floor Tiles (60x60)",
+    "description": "High quality ceramic floor tiles (60x60) for construction projects.",
+    "price": 19.58907948715825,
+    "unit": "Sqm",
+    "stock": 636,
+    "category": "Finishing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.060Z",
+    "updatedAt": "2026-05-03T10:50:12.060Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv8j002b9nggbl76rv39",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "Ready-Mix Concrete (C25)",
+    "description": "High quality ready-mix concrete (c25) for construction projects.",
+    "price": 109.0332953708799,
+    "unit": "Cubic Meter",
+    "stock": 779,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.067Z",
+    "updatedAt": "2026-05-03T10:50:12.067Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv8p002d9nggbwcglaxf",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "Galvanized Iron Sheets",
+    "description": "High quality galvanized iron sheets for construction projects.",
+    "price": 16.04997563213757,
+    "unit": "Sheet",
+    "stock": 879,
+    "category": "Roofing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.074Z",
+    "updatedAt": "2026-05-03T10:50:12.074Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv8w002f9ngggnte0iwb",
+    "supplierId": "cmopnfv6y001u9nggt840zv08",
+    "masterProductId": null,
+    "name": "PVC Conduit Pipe (20mm)",
+    "description": "High quality pvc conduit pipe (20mm) for construction projects.",
+    "price": 6.239122981545018,
+    "unit": "3m Length",
+    "stock": 745,
+    "category": "Electrical",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.080Z",
+    "updatedAt": "2026-05-03T10:50:12.080Z",
+    "supplier": {
+      "id": "cmopnfv6y001u9nggt840zv08",
+      "supplierProfile": {
+        "businessName": "Titan Steel & Concrete"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv9c002j9nggasxb7z4u",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "Ceramic Floor Tiles (60x60)",
+    "description": "High quality ceramic floor tiles (60x60) for construction projects.",
+    "price": 22.89552461901069,
+    "unit": "Sqm",
+    "stock": 197,
+    "category": "Finishing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.096Z",
+    "updatedAt": "2026-05-03T10:50:12.096Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv9j002l9nggqh7ibek6",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "Solar Water Heater (200L)",
+    "description": "High quality solar water heater (200l) for construction projects.",
+    "price": 848.7011155710577,
+    "unit": "Unit",
+    "stock": 1096,
+    "category": "Energy",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.103Z",
+    "updatedAt": "2026-05-03T10:50:12.103Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfv9t002n9nggwkhq270e",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "Red Clay Bricks",
+    "description": "High quality red clay bricks for construction projects.",
+    "price": 247.7856497772412,
+    "unit": "1000 Units",
+    "stock": 306,
+    "category": "Masonry",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.114Z",
+    "updatedAt": "2026-05-03T10:50:12.114Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfva1002p9ngg2vc5wdlp",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "Quarry Dust",
+    "description": "High quality quarry dust for construction projects.",
+    "price": 40.1555112770311,
+    "unit": "Ton",
+    "stock": 399,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.121Z",
+    "updatedAt": "2026-05-03T10:50:12.121Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfva8002r9nggm7xj4squ",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "Ready-Mix Concrete (C25)",
+    "description": "High quality ready-mix concrete (c25) for construction projects.",
+    "price": 108.927769614215,
+    "unit": "Cubic Meter",
+    "stock": 1001,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.128Z",
+    "updatedAt": "2026-05-03T10:50:12.128Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfvaf002t9ngg8o1s6q3p",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "PPR Hot Water Pipe",
+    "description": "High quality ppr hot water pipe for construction projects.",
+    "price": 13.34795803901759,
+    "unit": "Length",
+    "stock": 513,
+    "category": "Plumbing",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.135Z",
+    "updatedAt": "2026-05-03T10:50:12.135Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfval002v9nggoivceriu",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "River Sand (Clean)",
+    "description": "High quality river sand (clean) for construction projects.",
+    "price": 43.40952540771084,
+    "unit": "Ton",
+    "stock": 132,
+    "category": "Basic",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.142Z",
+    "updatedAt": "2026-05-03T10:50:12.142Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfvas002x9nggj5gtpm7x",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "Double Glazed Window Panes",
+    "description": "High quality double glazed window panes for construction projects.",
+    "price": 93.50284700663349,
+    "unit": "Sqm",
+    "stock": 260,
+    "category": "Glass",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.148Z",
+    "updatedAt": "2026-05-03T10:50:12.148Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfvaz002z9nggtb2vklmf",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "Structural Timber (2x4)",
+    "description": "High quality structural timber (2x4) for construction projects.",
+    "price": 2.02381301363805,
+    "unit": "Foot",
+    "stock": 330,
+    "category": "Carpentry",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.155Z",
+    "updatedAt": "2026-05-03T10:50:12.155Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmopnfvb600319ngg5ycaozs1",
+    "supplierId": "cmopnfv93002g9nggaxcf8bay",
+    "masterProductId": null,
+    "name": "Reinforcement Steel Bar (12mm)",
+    "description": "High quality reinforcement steel bar (12mm) for construction projects.",
+    "price": 6.964517678170839,
+    "unit": "Meter",
+    "stock": 925,
+    "category": "Structural",
+    "imageUrl": null,
+    "createdAt": "2026-05-03T10:50:12.162Z",
+    "updatedAt": "2026-05-03T10:50:12.162Z",
+    "supplier": {
+      "id": "cmopnfv93002g9nggaxcf8bay",
+      "supplierProfile": {
+        "businessName": "Elite Interior Finishes"
+      }
+    }
+  },
+  {
+    "id": "cmoqvc4fu0001v0vj93pfzy61",
+    "supplierId": "cmopnfuzq00009nggwtbvv77u",
+    "masterProductId": "master-red-clay-bricks",
+    "name": "Red Clay Bricks",
+    "description": "Durable fired clay bricks for traditional masonry work.",
+    "price": 6,
+    "unit": "bag",
+    "stock": 34,
+    "category": "Basic",
+    "imageUrl": "https://images.unsplash.com/photo-1590069230002-70cc002c3321?auto=format&fit=crop&q=80&w=400",
+    "createdAt": "2026-05-04T07:19:00.474Z",
+    "updatedAt": "2026-05-04T07:19:00.474Z",
+    "supplier": {
+      "id": "cmopnfuzq00009nggwtbvv77u",
+      "supplierProfile": {
+        "businessName": "Global Construction Supplies"
+      }
+    }
+  }
+]
