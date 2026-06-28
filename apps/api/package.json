@@ -11,10 +11,11 @@
 
   "start:prod": "node dist/main.js",
   "db:deploy": "prisma migrate deploy",
-  
+
   "postinstall": "npx prisma generate"
 },
   "dependencies": {
+     "@cscp/types": "*",
     "@nestjs/cli": "^10.3.0",
     "@nestjs/common": "^10.3.0",
     "@nestjs/config": "^3.2.0",
