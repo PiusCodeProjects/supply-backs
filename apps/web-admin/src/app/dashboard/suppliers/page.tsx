@@ -5,6 +5,9 @@ import { apiRequest } from '@/lib/api';
 import { getAccessToken } from '@/lib/auth';
 import { CheckCircle, XCircle, FileText, Building2, X } from 'lucide-react';
 
+// Derive the API origin (without the trailing /api) for serving uploaded files.
+const API_BASE = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4001/api').replace(/\/api$/, '');
+
 export default function SuppliersVerificationPage() {
   const [suppliers, setSuppliers]           = useState<any[]>([]);
   const [loading, setLoading]               = useState(true);
@@ -141,7 +144,7 @@ export default function SuppliersVerificationPage() {
             </div>
             <div style={{ flex: 1, overflow: 'hidden', background: '#0a0a0a' }}>
               <iframe
-                src={`http://localhost:4001${JSON.parse(docViewer.supplierProfile?.documents || '[]')[0] || ''}`}
+                src={`${API_BASE}${JSON.parse(docViewer.supplierProfile?.documents || '[]')[0] || ''}`}
                 style={{ width: '100%', height: '100%', border: 'none' }}
                 title="Business document"
               />

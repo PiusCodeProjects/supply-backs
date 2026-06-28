@@ -36,6 +36,9 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 
+// Derive the socket origin (without the trailing /api) from the API URL env var.
+const SOCKET_BASE = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4001/api').replace(/\/api$/, '');
+
 export default function InventoryPage() {
   const [items, setItems] = useState<any[]>([]);
   const [masterProducts, setMasterProducts] = useState<any[]>([]);
@@ -88,7 +91,7 @@ export default function InventoryPage() {
     const user = getUser();
     if (!token || !user?.id) return;
 
-    const socket = io('http://localhost:4001/catalog', { auth: { token } });
+    const socket = io(`${SOCKET_BASE}/catalog`, { auth: { token } });
     socket.emit('joinSupplierRoom', { supplierId: user.id });
     socket.on('stockUpdated', (updates: { id: string; stock: number }[]) => {
       setItems(prev =>

@@ -6,6 +6,9 @@ import { io, Socket } from 'socket.io-client';
 import { apiRequest } from '@/lib/api';
 import { getAccessToken } from '@/lib/auth';
 
+// Derive the socket origin (without the trailing /api) from the API URL env var.
+const SOCKET_BASE = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4001/api').replace(/\/api$/, '');
+
 const FleetMap = dynamic(() => import('@/components/FleetMap'), {
   ssr: false,
   loading: () => (
@@ -74,7 +77,7 @@ export default function FleetManagement() {
   async function initSocket() {
     const token = getAccessToken();
     if (!token) return;
-    const socket = io('http://localhost:4001/tracking', {
+    const socket = io(`${SOCKET_BASE}/tracking`, {
       auth: { token }, transports: ['websocket'], reconnection: true,
     });
     socket.on('locationUpdated', (data: { orderId: string; lat: number; lng: number }) => {

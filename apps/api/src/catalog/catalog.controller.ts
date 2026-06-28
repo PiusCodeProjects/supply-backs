@@ -22,6 +22,14 @@ import { JwtPayload } from '@cscp/types';
 import { CatalogService } from './catalog.service';
 import { CreateCatalogItemDto } from './dto/create-catalog-item.dto';
 
+// Public origin used to build absolute URLs for uploaded files.
+// In production set PUBLIC_API_URL on the API service (e.g. https://cscp-api.onrender.com).
+const PUBLIC_API_URL = (process.env.PUBLIC_API_URL || 'http://localhost:4001')
+  .replace(/\/$/, '')
+  .replace(/\/api$/, '');
+
+const uploadedFileUrl = (filename: string) => `${PUBLIC_API_URL}/uploads/${filename}`;
+
 @Controller('catalog')
 export class CatalogController {
   constructor(private catalogService: CatalogService) {}
@@ -77,7 +85,7 @@ export class CatalogController {
     @UploadedFile() file?: Express.Multer.File,
   ) {
     if (file) {
-      dto.imageUrl = `http://localhost:4001/uploads/${file.filename}`;
+      dto.imageUrl = uploadedFileUrl(file.filename);
     }
     return this.catalogService.proposeMasterProduct(user.sub, dto);
   }
@@ -110,7 +118,7 @@ export class CatalogController {
   }))
   createMasterProduct(@Body() dto: any, @UploadedFile() file?: Express.Multer.File) {
     if (file) {
-      dto.imageUrl = `http://localhost:4001/uploads/${file.filename}`;
+      dto.imageUrl = uploadedFileUrl(file.filename);
     }
     return this.catalogService.createMasterProduct(dto);
   }
@@ -129,7 +137,7 @@ export class CatalogController {
   }))
   updateMasterProduct(@Param('id') id: string, @Body() dto: any, @UploadedFile() file?: Express.Multer.File) {
     if (file) {
-      dto.imageUrl = `http://localhost:4001/uploads/${file.filename}`;
+      dto.imageUrl = uploadedFileUrl(file.filename);
     }
     return this.catalogService.updateMasterProduct(id, dto);
   }

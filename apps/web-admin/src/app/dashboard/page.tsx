@@ -9,6 +9,9 @@ import {
   Package, RefreshCw, ArrowRight, FileText, Award, BarChart2,
 } from 'lucide-react';
 
+// Derive the API origin (without the trailing /api) for serving uploaded files.
+const API_BASE = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4001/api').replace(/\/api$/, '');
+
 type Analytics = {
   orders: {
     total: number;
@@ -588,7 +591,7 @@ export default function DashboardPage() {
               <div style={{ fontWeight: 700 }}>{docViewer.supplierProfile?.businessName} — Documents</div>
               <button onClick={() => setDocViewer(null)} style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', padding: 4 }}><XCircle size={20} /></button>
             </div>
-            <iframe src={`http://localhost:4001${JSON.parse(docViewer.supplierProfile?.documents || '[]')[0] || ''}`} style={{ flex: 1, border: 'none', background: '#111' }} />
+            <iframe src={`${API_BASE}${JSON.parse(docViewer.supplierProfile?.documents || '[]')[0] || ''}`} style={{ flex: 1, border: 'none', background: '#111' }} />
             <div style={{ padding: '14px 22px', borderTop: '1px solid var(--border-subtle)', display: 'flex', gap: 10, justifyContent: 'flex-end' }}>
               <button onClick={() => { handleVerify(docViewer.id, 'REJECTED'); setDocViewer(null); }} style={{ padding: '8px 18px', background: 'rgba(239,68,68,0.12)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 8, color: '#EF4444', fontSize: 13, fontWeight: 700 }}>Reject Supplier</button>
               <button onClick={() => { handleVerify(docViewer.id, 'APPROVED'); setDocViewer(null); }} style={{ padding: '8px 18px', background: 'rgba(16,185,129,0.12)', border: '1px solid rgba(16,185,129,0.3)', borderRadius: 8, color: '#10B981', fontSize: 13, fontWeight: 700 }}>Approve Supplier</button>
